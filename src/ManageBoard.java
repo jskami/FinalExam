@@ -1,21 +1,21 @@
 import java.util.*;
 public class ManageBoard {
-	//������� - �迭��ҷ� �����
+
 	ArrayList<Board> boardList;
-	//������
+	
 	public ManageBoard() {
 		boardList = new ArrayList<Board>();
 	}
-	//�޼���
 	
-	//����Ʈ�� �߰�
+	
 	public void addboard(Board board) {
 		boardList.add(board);
 	}
-	//����Ʈ���� ����
+	
+	
 	public boolean removeBoard(int bNum) {
-		for (Board tmp : boardList) { // ����: �ӽú��� / ������: ���⼭ ���� ��ü
-			if (tmp.getbNum() == bNum) //�⺻ Ÿ���� int�� equals�� ���� �� �����ϱ� �̷��� �����
+		for (Board tmp : boardList) {
+			if (tmp.getbNum() == bNum)
 				boardList.remove(tmp);
 				return true;
 		}
